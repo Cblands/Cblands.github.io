@@ -4,9 +4,24 @@
     width: 100%;
 }
 
+.resume-box {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 10px;
+    background-color: #66ccff;
+    box-shadow: 0px 0px 6px 1px #66ccff;
+    border-radius: 6px;
+}
+
+.resume-link {
+    text-decoration: none;
+    color: black;
+}
+
 .divider {
     width: 70%;
-    margin: 5px;
+    margin: 10px;
     box-shadow: 0px 0px 6px 1px black;
 }
 
