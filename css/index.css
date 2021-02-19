@@ -1,7 +1,19 @@
+@keyframes pageload {
+    0% {background: #222;}
+    100% {background: #66ccff;}
+}
+
+@keyframes iconload {
+    0% {color: #222;}
+    100% {color: #66ccff;}
+}
+
 .main-body {
-    background-color: rgb(139, 139, 139);
+    background: #66ccff;
     font-family: Roboto;
+    color: #222;
     width: 100%;
+    animation: pageload 2s;
 }
 
 .resume-box {
@@ -9,20 +21,23 @@
     top: 15px;
     right: 15px;
     padding: 10px;
-    background-color: #66ccff;
-    box-shadow: 0px 0px 6px 1px #66ccff;
+    background-color: #222;
+    box-shadow: 0px 0px 6px 1px #222;
     border-radius: 6px;
 }
 
 .resume-link {
+    animation: iconload 2s;
     text-decoration: none;
-    color: black;
+    color: #66ccff;
 }
 
 .divider {
     width: 70%;
     margin: 10px;
-    box-shadow: 0px 0px 6px 1px black;
+    box-shadow: 0px 0px 1px 0px black;
+    background-color: #222;
+    height: 2px;
 }
 
 .sections, .section-item {
@@ -36,9 +51,15 @@
 }
 
 .section-title {
-    color: #66ccff;
-    font-size: 40px;
+    font-size: 35px;
+    font-weight: bold;
     margin-bottom: 10px;
+}
+
+.section-content {  
+    font-size: 22px;
+    color: #222;
+    margin: 15px;
 }
 
 .icon-container {
@@ -47,6 +68,7 @@
 }
 
 .icon-item {
+    animation: iconload 3s;
     color: #66ccff;
     margin: 10px;
 }
