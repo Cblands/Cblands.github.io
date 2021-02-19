@@ -5,6 +5,7 @@
 
 @keyframes iconload {
     0% {color: #222;}
+    25% {color: purple}
     100% {color: #66ccff;}
 }
 
@@ -17,7 +18,7 @@
 }
 
 .resume-box {
-    position: absolute;
+    position: fixed;
     top: 15px;
     right: 15px;
     padding: 10px;
@@ -33,7 +34,7 @@
 }
 
 .divider {
-    width: 70%;
+    width: 75%;
     margin: 10px;
     box-shadow: 0px 0px 1px 0px black;
     background-color: #222;
@@ -43,23 +44,30 @@
 .sections, .section-item {
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
 
 .section-item {
     align-items: center;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
 .section-title {
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 10px;
+    text-align: center;
 }
 
-.section-content {  
+.section-body {  
     font-size: 22px;
     color: #222;
     margin: 15px;
+    width: 100%;
+}
+
+.section-text {
+    margin: 5px;
 }
 
 .icon-container {
@@ -68,7 +76,7 @@
 }
 
 .icon-item {
-    animation: iconload 3s;
+    animation: iconload 2s;
     color: #66ccff;
     margin: 10px;
 }
