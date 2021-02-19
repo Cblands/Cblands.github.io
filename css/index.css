@@ -18,7 +18,7 @@
 }
 
 .resume-box {
-    position: absolute;
+    position: fixed;
     top: 15px;
     right: 15px;
     padding: 10px;
