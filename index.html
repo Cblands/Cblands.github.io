@@ -17,8 +17,22 @@
       <div class="resume-box">
         <a class="resume-link" href="resources/Resume Feb 2021.pdf"><i class="fa fa-download"></i> Download Resume</a>
       </div>
+      <div class="nav-box">
+        <div class="nav-ball" onclick="jumpToSection('about-section')" >
+          <span id="about-tip-text" class="tooltiptext">about me</span>
+          <div id="about-ball" class="inner-nav-ball"></div>
+        </div>
+        <div class="nav-div"></div>
+        <div class="nav-ball" onclick="jumpToSection('experience-section')">
+          <span id="experience-tip-text" class="tooltiptext">experience</span>
+          <div id="experience-ball" class="inner-nav-ball"></div></div>
+        <div class="nav-div"></div>
+        <div class="nav-ball" onclick="jumpToSection('projects-section')">
+          <span id="projects-tip-text" class="tooltiptext">projects</span>
+          <div id="projects-ball" class="inner-nav-ball"></div></div>
+      </div>
       <div class="sections">
-        <section class="section-item">
+        <section id="about-section" class="section-item">
           <p class="section-title">About Me</p>
           <div class="section-body">
             <p class="section-text">
@@ -36,7 +50,7 @@
           </div>
           <p class="divider"></p>
         </section>
-        <section class="section-item">
+        <section id="experience-section" class="section-item">
           <p class="section-title">Professional Experience</p>
           <div class="section-body">
             <p class="section-text">
@@ -61,18 +75,20 @@
           </div>
           <p class="divider"></p>
         </section>
-        <section class="section-item">
+        <section id="projects-section" class="section-item">
           <p class="section-title">Projects</p>
           <p class="section-body">
             Lots of good stuff:
-            <a style="color: #222;" href="https://github.com/sentalytics" target="_blank" rel="noopener noreferrer">Sentiment Analysis</a>
-            <a style="color: #222;" href="http://tower-climber.conorbutte.me" target="_blank" rel="noopener noreferrer">Tower Climber</a>
-            <a style="color: #222;" href="http://harold-engine.conorbutte.me" target="_blank" rel="noopener noreferrer">Harold Engine</a>
+            <a style="color: #222;" href="https://github.com/sentalytics" target="_blank" rel="noopener noreferrer">Sentiment Analysis</a>,
+            <a style="color: #222;" href="https://github.com/Cblands/cblands.github.io" target="_blank" rel="noopener noreferrer">this website</a>,
+            <a style="color: #222;" href="http://tower-climber.conorbutte.me" target="_blank" rel="noopener noreferrer">Tower Climber</a>,
+            <a style="color: #222;" href="http://harold-engine.conorbutte.me" target="_blank" rel="noopener noreferrer">Harold Engine</a>.
           </p>
+          <p class="divider"></p>
         </section>
-        <div style="height: 150px;"></div>
+        <div style="height: 80px;"></div>
       </div>
-      <footer class="footer">
+      <footer id="page-footer" class="footer">
         <div class="icon-container">
           <a class="icon-item" href="https://github.com/Cblands" target="_blank" rel="noopener noreferrer"><i class="fa fa-github-square fa-2x"></i></a>
           <a class="icon-item" href="mailto:conorbutte+web@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope-square fa-2x"></i></i></a>
